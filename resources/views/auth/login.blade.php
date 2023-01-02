@@ -48,10 +48,6 @@
 								<!--begin::Title-->
 								<h1 class="text-dark mb-3">Iniciar Sesión</h1>
 								<!--end::Title-->
-								<!--begin::Link-->
-								{{-- <div class="text-gray-400 fw-bold fs-4">New Here?
-								<a href="../../demo1/dist/authentication/layouts/basic/sign-up.html" class="link-primary fw-bolder">Create an Account</a></div> --}}
-								<!--end::Link-->
 							</div>
 							<!--begin::Heading-->
 							<!--begin::Input group-->
@@ -86,8 +82,6 @@
 								<!--begin::Submit button-->
 								<button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-primary w-100 mb-5">
 									<span class="indicator-label">Entrar</span>
-									<span class="indicator-progress">Espere por favor...
-									<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 								</button>
 								<!--end::Submit button-->
 							</div>
@@ -110,9 +104,6 @@
 		<script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
 		<script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
 		<!--end::Global Javascript Bundle-->
-		<!--begin::Page Custom Javascript(used by this page)-->
-		<script src="{{ asset('assets/js/custom/authentication/sign-in/general.js') }}"></script>
-		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
 	</body>
 	<!--end::Body-->
