@@ -657,8 +657,8 @@ $(document).ready(function () {
     function changeTitle() {
         var currentWindowWidth = $(window).width();
         if (currentWindowWidth <= 600) {
-            if ($('html').attr('lang') == "tr") {
-                $('.news_row > h3').html('Haberleri');
+            if ($('html').attr('lang') == "en") {
+                $('.news_row > h3').html('Noticias del proyecto');
             } else {
                 $('.news_row > h3').html('news');
             }
@@ -666,11 +666,10 @@ $(document).ready(function () {
             if ($('html').attr('lang') == "tr") {
                 $('.news_row > h3').html('Proje haberleri');
             } else {
-                $('.news_row > h3').html('Project news');
+                $('.news_row > h3').html('Noticias del proyecto');
             }
         }
     }
-
     //
     function mobileMenu() {
         var currentWindowWidth = $(window).width();

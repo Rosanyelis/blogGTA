@@ -34,8 +34,8 @@
 				<!--begin::Content-->
 				<div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
 					<!--begin::Logo-->
-					<a href="{{ url('/') }}" class="mb-12">
-						<img alt="Logo" src="{{ asset('assets/media/logos/logo-1.svg') }}" class="h-40px" />
+					<a href="{{ url('/') }}" class="mb-8">
+						<img alt="Logo" src="{{ asset('assets/media/logos/logo-hover.png') }}"  class="h-100px" />
 					</a>
 					<!--end::Logo-->
 					<!--begin::Wrapper-->
@@ -57,7 +57,12 @@
 								<!--end::Label-->
 								<!--begin::Input-->
 								<input class="form-control form-control-lg form-control-solid" type="text" name="email" autocomplete="off" />
-								<!--end::Input-->
+								@if ($errors->has('Email'))
+                                    <span class="text-danger">
+                                        {{ $errors->first('Email') }}
+                                    </span>
+                                @endif
+                                <!--end::Input-->
 							</div>
 							<!--end::Input group-->
 							<!--begin::Input group-->
@@ -74,6 +79,11 @@
 								<!--end::Wrapper-->
 								<!--begin::Input-->
 								<input class="form-control form-control-lg form-control-solid" type="password" name="password" autocomplete="off" />
+                                @if ($errors->has('password'))
+                                    <span class="text-danger">
+                                        {{ $errors->first('password') }}
+                                    </span>
+                                @endif
 								<!--end::Input-->
 							</div>
 							<!--end::Input group-->
